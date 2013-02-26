@@ -1,0 +1,2 @@
+REM Adds 'application/xml;charset=utf-8' as dynamic type for compression
+%windir%\system32\inetsrv\appcmd set config /section:httpCompression /+dynamicTypes.[mimeType='application/xml;charset=utf-8',enabled='true'] /commit:apphost
